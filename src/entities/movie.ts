@@ -1,3 +1,5 @@
+import IMedia from "./media";
+
 export default interface IMovie {
     id: string;
     title: string;
@@ -9,5 +11,8 @@ export default interface IMovie {
     trailerUrl: string;
     logoUrl: string;
     releaseDate: Date;
-    countryId: number;
+    countryId: string;
+    movieGenres: IMedia[];
+    movieActors: IMedia[];
+    movieCreators: IMedia[];
 }

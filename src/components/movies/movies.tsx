@@ -1,25 +1,35 @@
-import { useEffect } from "react";
-import { AppDispatch } from "../../redux/store";
-import { onGetMovies } from "../../redux/slices/movies-slice";
-import { useDispatch } from "react-redux";
-import { Paper } from "@mui/material";
-import { TableVirtuoso, TableComponents } from 'react-virtuoso';
-import MoviesTable from "./movies-table";
+import { useEffect, useState } from "react";
+import CreateMovie from "./create-movie/CreateMovie";
+import MoviesList from "./movies-list/MoviesList";
+import "../movies/Movies.css"
 
-function Movies() {
+const ViewModes = {
+  LIST: 'list',
+  CREATE: 'create'
+};
 
-  const dispatch: AppDispatch = useDispatch();
+function TVShows() {
+  const [currentView, setCurrentView] = useState(ViewModes.LIST);
 
-  useEffect(() => {
-    dispatch(onGetMovies());
-  }, [])
+  const handleCreateClick = () => {
+    setCurrentView(ViewModes.CREATE);
+  };
 
-    return (
-      <div className="Movies">
-        <MoviesTable/>
+  const handleMoviesListClick = () => {
+    setCurrentView(ViewModes.LIST);
+  };
+
+  return (
+    <div className="movies">
+      <div className='movies-actions'>
+        <button className={currentView == ViewModes.LIST? "movies-action-active" : "movies-action"} onClick={handleMoviesListClick}>List</button>
+        <button className={currentView == ViewModes.CREATE? "movies-action-active" : "movies-action"} onClick={handleCreateClick}>Create</button>
       </div>
-    );
-  }
-  
-  export default Movies;
-  
+
+      {currentView === ViewModes.CREATE && <CreateMovie />}
+      {currentView === ViewModes.LIST && <MoviesList/>}
+    </div>
+  );
+}
+
+export default TVShows;

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Discord";
+    src: url("../../../public/fonts/980082c4328266be3342a03dcb37c432.woff2") format("woff2");
+   }
+  
+  * {
+  padding: 0px;
+  }
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313338;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    background-color: #2b2d31;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form input {
+    width: 250px; /* Adjusts the width to match the grid */
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #3d3d3d; /* A subtle border */
+    background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+    color: #b0b0b0;
+    font-family: 'Discord', sans-serif;
+    font-size: 0.9rem;
+    box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+    font-size: 16px;
+    font-family: 'Discord', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.login-form button{
+    margin-top: 40px;
+    background-color: #248046; /* A medium gray */
+    color: #ffffff;
+    width: 250px;
+    height: 50px;
+    font-weight: 500; /* Medium font weight for buttons */
+    text-transform: uppercase; /* Stylish uppercase letters */
+    letter-spacing: 1px; /* Spacing out the letters for style */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: 0;
+    font-family: 'Discord', sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+}

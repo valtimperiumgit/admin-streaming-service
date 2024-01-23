@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Discord";
+    src: url("../../../../public/fonts/980082c4328266be3342a03dcb37c432.woff2") format("woff2");
+   }
+  
+  * {
+  padding: 0px;
+  }
+  
+  .pagination-container{
+      padding-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+  }
+  
+  .tv-show-list{
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+  }
+   
+  .tv-show-list-table{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+  }
+  
+  .table-container {
+      width: 1200px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+    
+    .table-container table {
+      /* Стили для таблицы */
+      border-collapse: collapse;
+      width: 100%;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+    
+    .table-container th, 
+    .table-container td {
+      /* Стили для ячеек таблицы */
+      background-color: #232428;
+      color: #999999;
+      font-family: 'Roboto', sans-serif;
+      padding: 8px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+    
+    .table-container tr:nth-child(even) {
+      /* Стили для четных строк таблицы */
+      background-color: #f2f2f2;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }

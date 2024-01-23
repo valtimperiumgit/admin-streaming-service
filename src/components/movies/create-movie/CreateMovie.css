@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Discord";
+    src: url("../../../../public/fonts/980082c4328266be3342a03dcb37c432.woff2") format("woff2");
+   }
+  
+  * {
+  padding: 0px;
+  }
+  
+  .create-tv-show {
+      /* This creates a responsive grid layout */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Space between grid items */
+      background-color: #313338; /* A dark gray background */
+      color: #b0b0b0; /* A light gray text for better readability */
+      border-radius: 8px;
+      font-family: 'Roboto', sans-serif; /* Using Roboto font */
+      box-sizing: border-box; 
+      /* Makes sure padding doesn't affect the overall width */
+      width: 1000px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+    
+    .create-tv-show label {
+      display: block;
+      margin: 10px 0 5px ;
+      font-weight: 500; /* Medium font weight for labels */
+      font-size: 0.95rem;
+    }
+    
+    .create-tv-show input[type='text'],
+    .create-tv-show input[type='number'],
+    .create-tv-show input[type='date'],
+    .create-tv-show input[type='file'],
+    .create-tv-show input,
+    .create-tv-show select,
+    .create-tv-show textarea, /* Assuming you might have a textarea for the description */
+    .create-tv-show button[type='submit'] {
+      width: 100%; /* Adjusts the width to match the grid */
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid #3d3d3d; /* A subtle border */
+      background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+      color: #b0b0b0;
+      font-family: 'Roboto', sans-serif; /* Using Roboto font */
+      font-size: 0.9rem;
+      box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+  
+    .create-tv-show .error-input {
+      width: 100%; /* Adjusts the width to match the grid */
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid rgb(223, 96, 96);
+      background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+      color: #b0b0b0;
+      font-family: 'Roboto', sans-serif; /* Using Roboto font */
+      font-size: 0.9rem;
+      box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+    
+    .create-tv-show input[type='file'] {
+      padding: 8px; /* Adjust padding for file inputs */
+      cursor: pointer;
+      position: relative;
+    }
+      .create-tv-show input::file-selector-button {
+          color: #ffffff;
+          padding: 0.5em;
+          background-color: #2c2c2c;
+          position: absolute;
+          right: -2px;
+          top:0;
+          border: thin solid grey;
+          border-radius: 3px;
+          font-family: 'Discord', sans-serif;
+          font-weight: 300;
+      }
+  
+    
+    .create-tv-show button[type='submit'] {
+      background-color: #248046; /* A medium gray */
+      color: #ffffff;
+      width: 300px;
+      height: 50px;
+      font-weight: 500; /* Medium font weight for buttons */
+      text-transform: uppercase; /* Stylish uppercase letters */
+      letter-spacing: 1px; /* Spacing out the letters for style */
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      border: 0;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    
+      &:hover {
+        background-color: #1e1f22; /* A shade lighter on hover */
+      }
+    }
+     
+    
+    /* Additional style for responsiveness */
+    @media (max-width: 768px) {
+      .create-tv-show {
+        grid-template-columns: 1fr; /* Stack elements in a single column on smaller screens */
+      }
+    }
+    
+    .create-tv-show .deleteBtn{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+  
+    .submit-button-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+  
+    .error {
+      color: rgb(223, 96, 96);
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+  

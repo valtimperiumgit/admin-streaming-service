@@ -1,0 +1,50 @@
+.season{
+    height: 50px;
+    border-bottom: solid 2px #3f4147;
+    display: flex;
+    align-items: center;
+    color: #b0b0b0;
+    width: 600px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.season :hover {
+    background-color: #2b2d31;
+}
+
+.season-content{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+}
+
+.seasons{
+    margin-bottom: 50px;
+}
+
+.add-season{
+    height: 50px;
+    border-bottom: solid 2px #3f4147;
+    display: flex;
+    align-items: center;
+    color: #b0b0b0;
+    width: 600px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.add-season :hover {
+    background-color: #248046;
+}
+
+.add-season-content{
+    color: white;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

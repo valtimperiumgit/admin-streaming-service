@@ -1,4 +1,33 @@
 body, html {
   margin: 0;
   height: 100%;
+  background-color: #3b3b3b;
+}
+
+/* Кастомизация скроллбара для WebKit-браузеров (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* уменьшаем ширину скроллбара */
+  height: 8px; /* высота для горизонтального скролла */
+}
+
+/* Стиль трека скроллбара */
+::-webkit-scrollbar-track {
+  background: transparent; /* прозрачный фон трека */
+}
+
+/* Стиль ползунка скроллбара */
+::-webkit-scrollbar-thumb {
+  background: rgba(79, 84, 92, 0.7); /* цвет ползунка */
+  border-radius: 4px; /* скругляем углы */
+}
+
+/* Стиль ползунка при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(79, 84, 92, 0.8); /* немного изменяем цвет при наведении */
+}
+
+/* Для Firefox */
+html {
+  scrollbar-width: thin; /* делаем полосу прокрутки тоньше */
+  scrollbar-color: rgba(79, 84, 92, 0.7) transparent; /* задаем цвета для ползунка и трека */
 }

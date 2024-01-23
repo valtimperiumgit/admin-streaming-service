@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Discord";
+    src: url("../../../../public/fonts/980082c4328266be3342a03dcb37c432.woff2") format("woff2");
+   }
+  
+  * {
+  padding: 0px;
+  }
+
+.episodes-title{
+    color: white;
+    font-size: 16px;
+    font-family: 'Discord', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.episode{
+    height: 50px;
+    border-bottom: solid 2px #3f4147;
+    display: flex;
+    align-items: center;
+    color: #b0b0b0;
+    width: 600px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.episode-content{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+}
+
+.seasons{
+    margin-bottom: 50px;
+}
+
+.add-episode{
+    height: 50px;
+    border-bottom: solid 2px #3f4147;
+    display: flex;
+    align-items: center;
+    color: #b0b0b0;
+    width: 600px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.add-episode :hover {
+    background-color: #248046;
+}
+
+.add-episode-content{
+    color: white;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.episode-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.401);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    pointer-events: all;
+  }
+  
+  .episode-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1001;
+    background-color: #313338;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .episode-modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .episode-modal-content input{
+    width: 250px; /* Adjusts the width to match the grid */
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #3d3d3d; /* A subtle border */
+    background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+    color: #b0b0b0;
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    font-size: 0.9rem;
+    box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+    font-size: 16px;
+    font-family: 'Discord', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  .close-create-episode-modal {
+    position: absolute;
+    top: 30px;
+    right: 34px;
+    color: rgb(135, 130, 130);
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  label {
+    color: white;
+    margin-top: 20px;
+
+    font-size: 13px;
+    font-family: 'Discord', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  .download{
+    width: 250px; /* Adjusts the width to match the grid */
+    padding: 12px;
+    border: none;
+    background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+    color: #b0b0b0;
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    font-size: 0.9rem;
+    box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+    cursor: pointer;
+    font-family: 'Discord', sans-serif;
+    font-weight: 300;
+  }
+
+  .delete-episode-button{
+    margin-left: 20px;
+  }

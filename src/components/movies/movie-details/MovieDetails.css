@@ -1,0 +1,346 @@
+@font-face {
+    font-family: "Discord";
+    src: url("../../../../public/fonts/980082c4328266be3342a03dcb37c432.woff2") format("woff2");
+   }
+  
+  * {
+  padding: 0px;
+  }
+  
+  .create-tv-show {
+      /* This creates a responsive grid layout */
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      gap: 20px; /* Space between grid items */
+      background-color: #313338; /* A dark gray background */
+      color: #b0b0b0; /* A light gray text for better readability */
+      border-radius: 8px;
+      box-sizing: border-box; 
+      margin-left: 60px;
+      font-size: 16px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+      width: 1400px;
+    }
+    
+    .create-tv-show label {
+      display: block;
+      margin: 10px 0 5px ;
+      font-weight: 500; /* Medium font weight for labels */
+      font-size: 0.95rem;
+    }
+    
+    .create-tv-show input[type='text'],
+    .create-tv-show input[type='number'],
+    .create-tv-show input[type='date'],
+    .create-tv-show input[type='file'],
+    .create-tv-show input,
+    .create-tv-show select,
+    .create-tv-show textarea, /* Assuming you might have a textarea for the description */
+    .create-tv-show button[type='submit'] {
+      width: 100%; /* Adjusts the width to match the grid */
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid #3d3d3d; /* A subtle border */
+      background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+      color: #b0b0b0;
+      font-family: 'Roboto', sans-serif; /* Using Roboto font */
+      font-size: 0.9rem;
+      box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+      font-size: 16px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+    
+    .create-tv-show input[type='file'] {
+      padding: 8px; /* Adjust padding for file inputs */
+      cursor: pointer;
+      position: relative;
+    }
+      .create-tv-show input::file-selector-button {
+          color: #ffffff;
+          padding: 0.5em;
+          background-color: #2c2c2c;
+          position: absolute;
+          right: -2px;
+          top:0;
+          border: thin solid grey;
+          border-radius: 3px;
+          font-family: 'Discord', sans-serif;
+          font-weight: 300;
+      }
+  
+    
+    .create-tv-show button[type='submit'] {
+      background-color: #248046; /* A medium gray */
+      color: #ffffff;
+      width: 300px;
+      height: 50px;
+      font-weight: 500; /* Medium font weight for buttons */
+      text-transform: uppercase; /* Stylish uppercase letters */
+      letter-spacing: 1px; /* Spacing out the letters for style */
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      border: 0;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+      
+    
+      &:hover {
+        background-color: #1e1f22; /* A shade lighter on hover */
+      }
+    }
+     
+    
+    /* Additional style for responsiveness */
+    @media (max-width: 768px) {
+      .create-tv-show {
+        grid-template-columns: 1fr; /* Stack elements in a single column on smaller screens */
+      }
+    }
+    
+    .create-tv-show .deleteBtn{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+  
+    .submit-button-container{
+      display: flex;
+      padding-top: 20px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+      margin-right: 120px;
+    }
+  
+    .files{
+      color: #b0b0b0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-left: 60px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  
+    .files input{
+      color: #ffffff;
+      padding: 0.5em;
+      background-color: #2c2c2c;
+      border: thin solid grey;
+      border-radius: 3px;
+    }
+  
+    .files input[type='file'] {
+      padding: 8px; /* Adjust padding for file inputs */
+      cursor: pointer;
+      position: relative;
+    }
+  
+    .files input[type='file']
+    {
+      width: 300px; /* Adjusts the width to match the grid */
+      padding: 12px;
+      border-radius: 7px;
+      border: 1px solid #3d3d3d; /* A subtle border */
+      background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+      color: #b0b0b0;
+      font-family: 'Roboto', sans-serif; /* Using Roboto font */
+      font-size: 0.9rem;
+      box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+      margin-top: 10px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+  
+    .files button
+    {
+      width: 230px; /* Adjusts the width to match the grid */
+      padding: 12px;
+      border: none;
+      background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+      color: #b0b0b0;
+      font-family: 'Roboto', sans-serif; /* Using Roboto font */
+      font-size: 0.9rem;
+      box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+      cursor: pointer;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+  
+    .file-container{
+      margin-top: 50px;
+      background-color: #2b2d31;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+      width: 230px;
+    }
+  
+    .trailer-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      background-color: #2b2d31;
+      border-radius: 5px;
+      height: 320px;
+      width: 230px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+  
+    .trailer-container-inside{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+  
+    .file-container-label{
+      color: #ffffff;
+      margin-top: 10px;
+      margin-bottom: 16px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    }
+  
+    .seasons-container{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 70px;
+    }
+  
+  
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.401);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      pointer-events: all;
+    }
+    
+    .modal {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+      z-index: 1001;
+      background-color: #313338;
+      width: 500px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+  
+    .modal-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .modal-content input{
+      width: 250px; /* Adjusts the width to match the grid */
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid #3d3d3d; /* A subtle border */
+      background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+      color: #b0b0b0;
+      font-family: 'Roboto', sans-serif; /* Using Roboto font */
+      font-size: 0.9rem;
+      box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+      font-size: 16px;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+  
+    .close-create-season-modal {
+      position: absolute;
+      top: 30px;
+      right: 34px;
+      color: rgb(135, 130, 130);
+      cursor: pointer;
+      font-size: 25px;
+    }
+  
+    .create-season-modal-button{
+      background-color: #248046; /* A medium gray */
+      color: #ffffff;
+      width: 250px;
+      height: 50px;
+      font-weight: 500; /* Medium font weight for buttons */
+      text-transform: uppercase; /* Stylish uppercase letters */
+      letter-spacing: 1px; /* Spacing out the letters for style */
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      border: 0;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+      margin-top: 30px;
+    }
+  
+    .edit-tv-show-button {
+      background-color: #248046; /* A medium gray */
+      color: #ffffff;
+      width: 150px;
+      height: 50px;
+      font-weight: 500; /* Medium font weight for buttons */
+      text-transform: uppercase; /* Stylish uppercase letters */
+      letter-spacing: 1px; /* Spacing out the letters for style */
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      border: 0;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+      margin-right: 20px;
+    
+      &:hover {
+        background-color: #1e1f22; /* A shade lighter on hover */
+      }
+    }
+  
+    .delete-tv-show-button {
+      background-color: #d22000; /* A medium gray */
+      color: #ffffff;
+      width: 150px;
+      height: 50px;
+      font-weight: 500; /* Medium font weight for buttons */
+      text-transform: uppercase; /* Stylish uppercase letters */
+      letter-spacing: 1px; /* Spacing out the letters for style */
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      border: 0;
+      font-family: 'Discord', sans-serif;
+      font-weight: 300;
+    
+      &:hover {
+        background-color: #1e1f22; /* A shade lighter on hover */
+      }
+    }

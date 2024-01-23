@@ -1,0 +1,105 @@
+.close-create-episode-modal {
+    position: absolute;
+    top: 5px;
+    right: 11px;
+    color: rgb(135, 130, 130);
+    cursor: pointer;
+  }
+
+  .episode-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.401);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .episode-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1001;
+    background-color: #313338;
+    width: 1000px;
+    height: 520px;
+    position: relative;
+    overflow: auto;
+  }
+
+  .episod-modal-edit-form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .episod-modal-edit-form input{
+    width: 250px; /* Adjusts the width to match the grid */
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #3d3d3d; /* A subtle border */
+    background-color: #1e1f22; /* Slightly lighter than the background for contrast */
+    color: #b0b0b0;
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    font-size: 0.9rem;
+    box-sizing: border-box; /* Makes sure padding and borders don't affect the overall width */
+    font-size: 16px;
+    font-family: 'Discord', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  .edit-episode-modal-button{
+    background-color: #248046; /* A medium gray */
+    color: #ffffff;
+    width: 115px;
+    height: 50px;
+    font-weight: 500; /* Medium font weight for buttons */
+    text-transform: uppercase; /* Stylish uppercase letters */
+    letter-spacing: 1px; /* Spacing out the letters for style */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: 0;
+    font-family: 'Discord', sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-right: 15px;
+  }
+
+  .delete-episode-modal-button{
+    background-color: #d22000; /* A medium gray */
+    color: #ffffff;
+    width: 115px;
+    height: 50px;
+    font-weight: 500; /* Medium font weight for buttons */
+    text-transform: uppercase; /* Stylish uppercase letters */
+    letter-spacing: 1px; /* Spacing out the letters for style */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: 0;
+    font-family: 'Discord', sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+  }
+
+  .episode-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1001;
+    background-color: #313338;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
